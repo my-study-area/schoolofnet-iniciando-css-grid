@@ -36,6 +36,20 @@
 
         .footer {
             grid-area: footer;
+            display: grid;
+        }
+
+        .footer .copy,
+        .footer .year {
+            grid-row: 1;
+        }
+        
+        .footer .copy {
+            justify-self: start;
+        }
+
+        .footer .year {
+            justify-self: end;
         }
     </style>
 </head>
@@ -46,7 +60,10 @@
         </nav>
         <aside class="aside grid-item"></aside>
         <div class="content grid-item"></div>
-        <footer class="footer grid-item"></footer>
+        <footer class="footer grid-item">
+            <p class="copy">©Copyrigh</p>
+            <p class="year">2020</p>
+        </footer>
     </main>
 </body>
 </html>
