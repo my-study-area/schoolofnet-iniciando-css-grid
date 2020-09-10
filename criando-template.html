@@ -28,6 +28,23 @@
 
         .aside {
             grid-area: aside;
+            display: grid;
+        }
+
+        .aside ul {
+            display: grid;
+            list-style: none;
+        }
+
+        .aside ul > li {
+            grid-auto-flow: row;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .aside ul > li:hover {
+            text-decoration: underline;
         }
 
         .content {
@@ -58,7 +75,13 @@
         <nav class="nav grid-item">
             Nav
         </nav>
-        <aside class="aside grid-item"></aside>
+        <aside class="aside grid-item">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </aside>
         <div class="content grid-item"></div>
         <footer class="footer grid-item">
             <p class="copy">©Copyrigh</p>
