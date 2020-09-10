@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando template</title>
+    <style>
+        .main {
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+                "nav nav"
+                "aside content"
+                "footer footer";
+        }
+
+        .grid-item {
+            background: #ccc;
+            padding: 10px;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <nav class="nav grid-item"></nav>
+        <aside class="aside grid-item"></aside>
+        <div class="content grid-item"></div>
+        <footer class="footer grid-item"></footer>
+    </main>
+</body>
+</html>
