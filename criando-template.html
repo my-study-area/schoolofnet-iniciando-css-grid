@@ -49,6 +49,27 @@
 
         .content {
             grid-area: content;
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .row {
+            display: grid;
+            grid-auto-flow: row;
+        }
+
+        .column {
+            display: grid;
+            grid-auto-flow: column;
+        }
+
+        .form {
+            display: grid;
+            grid-gap: 5px;
         }
 
         .footer {
@@ -82,7 +103,34 @@
                 <li>Link 3</li>
             </ul>
         </aside>
-        <div class="content grid-item"></div>
+        <section class="content grid-item">
+            <h2>bem vindo, Adriano!</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="sub-column">
+                            <form action="" class="form">
+                                <div class="row">
+                                    <input type="text" placeholder="Nome">
+                                </div>
+                                <div class="row">
+                                    <input type="text" placeholder="Idade">
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sub-column">sub-column 2</div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+                <div class="row">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </section>
         <footer class="footer grid-item">
             <p class="copy">©Copyrigh</p>
             <p class="year">2020</p>
